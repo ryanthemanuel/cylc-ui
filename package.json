@@ -22,7 +22,7 @@
     "test:e2e": "yarn run serve e2e:open",
     "test:unit": "vitest",
     "test": "vitest run && yarn run serve cy:run"
-  },
+  }, 
   "dependencies": {
     "@apollo/client": "3.12.6",
     "@hpcc-js/wasm": "2.22.4",
