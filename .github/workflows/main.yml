@@ -94,6 +94,7 @@ jobs:
           config: baseUrl=${{ env.BASE_URL }}
           wait-on: ${{ env.BASE_URL }}
           browser: ${{ matrix.browser }}
+          record: true
 
       - name: Test (component)
         uses: cypress-io/github-action@v6
