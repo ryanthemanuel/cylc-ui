@@ -91,7 +91,7 @@ jobs:
           CYPRESS_INTERNAL_MEMORY_SAVE_STATS: true
           DEBUG: cypress*memory
         with:
-          install-command: yarn --refresh-lockfile
+          install-command: YARN_ENABLE_HARDENED_MODE=0 yarn
           build: yarn run build --mode offline
           start: yarn run preview
           config: baseUrl=${{ env.BASE_URL }}
