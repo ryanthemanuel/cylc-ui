@@ -4,6 +4,7 @@ const path = require('path')
 
 module.exports = defineConfig({
   projectId: 'y7pdv3',
+  injectDocumentDomain: true,
   video: false,
   defaultCommandTimeout: 10000,
   execTimeout: 60000,
