@@ -1,6 +1,6 @@
 const { defineConfig } = require('cypress')
-// const vitePreprocessor = require('cypress-vite')
-// const path = require('path')
+const vitePreprocessor = require('cypress-vite')
+const path = require('path')
 
 module.exports = defineConfig({
   projectId: 'y7pdv3',
@@ -28,13 +28,13 @@ module.exports = defineConfig({
       Note: Set NODE_ENV to prevent vite eslint plugin linting errors failing
       the transform (e.g. no-only-tests rule) */
       process.env.NODE_ENV = 'development'
-      // on(
-      //   'file:preprocessor',
-      //   vitePreprocessor({
-      //     configFile: path.resolve(__dirname, './vite.config.js'),
-      //     mode: 'development',
-      //   })
-      // )
+      on(
+        'file:preprocessor',
+        vitePreprocessor({
+          configFile: path.resolve(__dirname, './vite.config.js'),
+          mode: 'development',
+        })
+      )
       return config
     },
     specPattern: 'tests/e2e/specs/**/*.cy.{js,jsx,ts,tsx}',
