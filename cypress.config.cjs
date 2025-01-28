@@ -3,6 +3,7 @@ const vitePreprocessor = require('cypress-vite')
 const path = require('path')
 
 module.exports = defineConfig({
+  projectId: 'y7pdv3',
   video: false,
   defaultCommandTimeout: 10000,
   execTimeout: 60000,

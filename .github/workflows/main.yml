@@ -87,6 +87,7 @@ jobs:
         uses: cypress-io/github-action@v6
         env:
           BASE_URL: http://localhost:4173/
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
         with:
           build: yarn run build --mode offline
           start: yarn run preview
