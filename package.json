@@ -60,7 +60,7 @@
     "@vue/test-utils": "2.4.6",
     "concurrently": "9.1.2",
     "cross-fetch": "4.1.0",
-    "cypress": "https://cdn.cypress.io/beta/npm/14.0.2/linux-x64/ryanm/prototype/back-out-electron-abbb517b75d36d1195e2c80394fcd6ed80de7e78/cypress.tgz",
+    "cypress": "https://cdn.cypress.io/beta/npm/14.0.2/linux-x64/ryanm/prototype/back-out-electron-8db064a2b80d520a65c4975eed2fcde849f8e33a/cypress.tgz",
     "cypress-vite": "1.6.0",
     "eslint": "8.57.1",
     "eslint-config-standard": "17.1.0",
