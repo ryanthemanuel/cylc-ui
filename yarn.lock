@@ -3758,7 +3758,7 @@ __metadata:
     axios: "npm:1.7.8"
     concurrently: "npm:9.1.2"
     cross-fetch: "npm:4.1.0"
-    cypress: "https://cdn.cypress.io/beta/npm/14.0.2/linux-x64/ryanm/prototype/back-out-electron-8db064a2b80d520a65c4975eed2fcde849f8e33a/cypress.tgz"
+    cypress: "https://cdn.cypress.io/beta/npm/14.0.2/linux-x64/ryanm/prototype/back-out-electron-4574e4aef04ef70de9c25c6db8f637622e1a30ec/cypress.tgz"
     cypress-vite: "npm:1.6.0"
     dedent: "npm:1.5.3"
     enumify: "npm:2.0.0"
@@ -3825,9 +3825,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@https://cdn.cypress.io/beta/npm/14.0.2/linux-x64/ryanm/prototype/back-out-electron-8db064a2b80d520a65c4975eed2fcde849f8e33a/cypress.tgz":
+"cypress@https://cdn.cypress.io/beta/npm/14.0.2/linux-x64/ryanm/prototype/back-out-electron-4574e4aef04ef70de9c25c6db8f637622e1a30ec/cypress.tgz":
   version: 14.0.2
-  resolution: "cypress@https://cdn.cypress.io/beta/npm/14.0.2/linux-x64/ryanm/prototype/back-out-electron-8db064a2b80d520a65c4975eed2fcde849f8e33a/cypress.tgz"
+  resolution: "cypress@https://cdn.cypress.io/beta/npm/14.0.2/linux-x64/ryanm/prototype/back-out-electron-4574e4aef04ef70de9c25c6db8f637622e1a30ec/cypress.tgz"
   dependencies:
     "@cypress/request": "npm:^3.0.6"
     "@cypress/xvfb": "npm:^1.2.4"
@@ -3874,7 +3874,7 @@ __metadata:
     yauzl: "npm:^2.10.0"
   bin:
     cypress: bin/cypress
-  checksum: 10c0/8927608fe79bdea2b71e8c7c5fd4f2e4c7683c6af8ec8e6cccaab996b1d189d70cf530c7935473f7a114f1710fb2d2b8b30d452e4fdf38f10ff72e3249e55223
+  checksum: 10c0/6f9f9749a62fbcbc71a937222e2a626484b03a65b84cb0ff3267a943e7d96c8e0df73ab1f9e66c48921a9b80a3c56b685dbb866a7f4071cdaa44cb9665530c52
   languageName: node
   linkType: hard
 
