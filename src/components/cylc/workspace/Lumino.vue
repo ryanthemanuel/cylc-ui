@@ -147,8 +147,10 @@ const addView = ({ name, initialOptions = {} }, onTop = true) => {
   dockPanel.addWidget(luminoWidget, { mode: 'tab-after' })
   // give time for Lumino's widget DOM element to be created
   nextTick(() => {
+    console.log('Adding view', name, 'with initial options', initialOptions)
     views.value.set(id, { name, initialOptions })
     if (onTop) {
+      console.log('Selecting widget')
       dockPanel.selectWidget(luminoWidget)
     }
   })
