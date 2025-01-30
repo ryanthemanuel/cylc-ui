@@ -30,13 +30,6 @@ import { computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { useJobTheme, useReducedAnimation } from '@/composables/localStorage'
 
-window.Element.prototype.animate = null
-window.fetch('https://rawgit.com/web-animations/web-animations-js/master/web-animations.min.js').then((response) => {
-  return response.text().then((body) => {
-    window.eval(body)
-  })
-})
-
 const DEFAULT_LAYOUT = 'empty'
 const route = useRoute()
 
