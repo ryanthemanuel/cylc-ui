@@ -47,6 +47,7 @@ Cypress.on('uncaught:exception', () => {
 
 before(() => {
   cy.on('window:before:load', async (win) => {
+    console.log('disabling and polyfilling animations')
     win.Element.prototype.animate = null
     const response = await win.fetch('https://rawgit.com/web-animations/web-animations-js/master/web-animations.min.js')
     const body = await response.text()
