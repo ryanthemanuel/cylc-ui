@@ -418,7 +418,7 @@ function addView (view) {
   cy.get('[data-cy=add-view-btn]').click()
   cy.get(`#toolbar-add-${view}-view`).click()
     // wait for menu to close
-    .should('not.be.exist')
+    .should('not.exist')
 }
 
 describe('Filters and Options save state', () => {

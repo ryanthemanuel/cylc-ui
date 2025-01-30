@@ -87,12 +87,16 @@ jobs:
         uses: cypress-io/github-action@v6
         env:
           BASE_URL: http://localhost:4173/
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          CYPRESS_INTERNAL_MEMORY_SAVE_STATS: true
+          DEBUG: cypress*memory
         with:
           build: yarn run build --mode offline
           start: yarn run preview
           config: baseUrl=${{ env.BASE_URL }}
           wait-on: ${{ env.BASE_URL }}
           browser: ${{ matrix.browser }}
+          record: true
 
       - name: Test (component)
         uses: cypress-io/github-action@v6
@@ -113,6 +117,11 @@ jobs:
           name: 'coverage_${{ matrix.browser }}_${{ matrix.os }}'
           path: coverage/lcov.info
           retention-days: 4
+      - name: Upload memory file
+        uses: actions/upload-artifact@v4
+        with:
+          name: 'cypress_logs_memory_${{ matrix.browser }}_${{ matrix.os }}'
+          path: cypress/logs/memory
 
   codecov-upload:
     needs: [unit-test-and-build, cypress-run]
