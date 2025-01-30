@@ -40,3 +40,16 @@
 //
 // -- This is will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+Cypress.on('uncaught:exception', () => {
+  return false
+})
+
+before(() => {
+  cy.on('window:before:load', async (win) => {
+    win.Element.prototype.animate = null
+    const response = await win.fetch('https://rawgit.com/web-animations/web-animations-js/master/web-animations.min.js')
+    const body = await response.text()
+    win.eval(body)
+  })
+})
